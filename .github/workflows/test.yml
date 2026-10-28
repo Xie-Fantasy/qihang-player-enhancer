@@ -1,0 +1,26 @@
+name: 脚本回归检查
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 获取代码
+        uses: actions/checkout@v4
+      - name: 配置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: 安装测试依赖
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: 检查语法与播放器行为
+        run: npm test

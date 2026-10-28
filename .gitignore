@@ -1,0 +1,20 @@
+node_modules/
+dist/
+local-archive/
+公众号素材/
+
+# 本地研究副本、旧测试日志与历史截图不随项目公开
+tests/research/
+tests/验证结果*.json
+tests/player-regression.js
+/*.png
+
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

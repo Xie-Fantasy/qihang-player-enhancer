@@ -1,0 +1,15 @@
+{
+  "name": "qihang-player-enhancer",
+  "description": "Qihang Player Enhancer｜启航播放器增强：长按倍速、音量快捷键与字幕设置",
+  "private": true,
+  "version": "1.5.1",
+  "homepage": "https://github.com/kkkioio/qihang-player-enhancer#readme",
+  "repository": { "type": "git", "url": "https://github.com/kkkioio/qihang-player-enhancer.git" },
+  "bugs": { "url": "https://github.com/kkkioio/qihang-player-enhancer/issues" },
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --check qihang-player.user.js && node tests/fullscreen-regression.cjs && node tests/subtitle-volume-regression.cjs",
+    "preview": "node tests/preview-server.cjs"
+  },
+  "devDependencies": { "jsdom": "26.1.0" }
+}

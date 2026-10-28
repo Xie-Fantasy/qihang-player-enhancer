@@ -1,0 +1,7 @@
+/* 测试自建的最小播放器皮肤，不包含第三方播放器源码或图片。 */
+.ccH5playerBox { position: relative; overflow: hidden; }
+.ccH5playerBox section { position: absolute; left: 0; bottom: 0; width: 100%; height: 40px; }
+.ccH5FadeOut { opacity: 0; }
+.ccH5SettingArea { display: none; }
+.ccH5SettingRow span { display: inline-block; width: 100px; }
+.ccH5SettingRow:last-child span { width: 64px; }
