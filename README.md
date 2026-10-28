@@ -1,4 +1,4 @@
-# Qihang Player Enhancer｜启航播放器增强
+# qihang-player-enhancer / 启航播放器增强
 
 让启航网课的播放操作更顺手：长按临时加速、键盘调音量、一键全屏，以及可以调整位置和外观的字幕。
 
@@ -9,6 +9,20 @@
 **[安装最新脚本](https://raw.githubusercontent.com/kkkioio/qihang-player-enhancer/main/qihang-player.user.js)** · **[下载发布包](https://github.com/kkkioio/qihang-player-enhancer/releases/latest)** · **[反馈问题](https://github.com/kkkioio/qihang-player-enhancer/issues)** · **[查看更新记录](CHANGELOG.md)**
 
 封面是主要快捷键的示意图；完整操作及新增功能以本文为准。
+
+## 真实课程页运行截图
+
+以下截图于 **2026 年 10 月 28 日**，直接截取自已登录的启航真实课程页面。截图只保留播放器控件区域，未包含浏览器地址栏、账号水印、章节列表或学习记录。
+
+**播放器底部入口。** “字幕设置”与原播放器的倍速按钮并排，位于“正常”倍速按钮左侧：
+
+![真实启航课程页：字幕设置位于倍速按钮左侧](docs/assets/real-player-controls.jpg)
+
+**展开后的字幕设置。** 字号、位置、颜色、透明度、粗细、字体与描边选项集中在一个面板中。截图中的字号 26、透明度 15% 是拍摄时的示例配置，并非默认值：
+
+![真实启航课程页：包含透明度滑块的字幕设置面板](docs/assets/real-subtitle-settings.jpg)
+
+这些截图展示了当时课程的界面接入效果；不同课程、播放器版本及浏览器仍可能存在差异。
 
 ## 为什么要做这个脚本
 
@@ -212,6 +226,10 @@ tests/
   preview-server.cjs         使用模拟画面的本地预览
 docs/
   assets/keyboard-cover.png  项目封面
+  assets/real-player-controls.jpg
+                            真实课程的控制栏截图
+  assets/real-subtitle-settings.jpg
+                            真实课程的字幕设置截图
   TESTING.md                 测试方式与验收边界
 .github/workflows/test.yml   自动回归检查
 ```
